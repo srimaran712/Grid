@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+.testimonials{
+    
+    display:grid;
+    margin:8%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    grid-template-areas: "first first second third"
+                         "fourth fifth fifth third";
+    grid-column-gap:2%;
+    grid-row-gap:4%;
+    
+    
+}
+.test{
+    padding:25px;
+    border-radius:18px;
+    border:none;
+    box-shadow: 1px 1px 1px 2px #e2e2e2;
+}
+.one{
+    grid-area:first;
+    background-image:url("./images/bg-pattern-quotation.svg");
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-color:blueviolet;
+    
+}
+.two{
+    grid-area:second;
+    background-color:#665E79;
+}
+.three{
+    grid-area:third;
+    background-color:rgb(246, 241, 241);
+}
+.four{
+    grid-area:fourth;
+    background-color:whitesmoke;
+    box-shadow: 1px 1px 1px 2px white;
+}
+.five{
+    grid-area:fifth;
+    background-color:#180c28;
+}
+.test-img{
+    border-radius:45px;
+}
+.grd-name {
+    display:inline-block;
+    margin-left:10px;
+    font-family:"Roboto Condensed",sans-serif;
+    font-weight:500;
+    letter-spacing:1px;
+}
+.grd-name span{
+    opacity:60%;
+    
+}
+.name1{
+    font-family:"Oswald",sans-serif;
+    color:antiquewhite;
+}
+.test-heading{
+    font-family:"Roboto Condensed",sans-serif;
+    color:antiquewhite;
+    font-size:20px;
+    margin:10px;
+    font-weight:700;
+}
+.heading2{
+    color:white;
+
+}
+.heading3{
+   color: rgb(56, 54, 54);
+}
+.name2{
+    color:white;
+}
+.name5{
+    color:white;
+}
+
+.content5{
+    color:white;
+}
+.test-content{
+    color:rgb(227, 221, 221);
+    font-family:"Roboto Condensed",sans-serif;
+    font-size:17px;
+    word-spacing:2px;
+    
+    
+}
+.heading4{
+    color:rgb(56, 54, 54);
+}
+.content4{
+    color:rgb(53, 52, 52);
+}
+.content3{
+    color:rgb(43, 42, 42);
+}
+
+
+/*------------mobile screen--------*/
+
+@media(max-width:480px){
+    .testimonials{
+        display:grid;
+    
+    grid-template-columns: 1fr;
+    
+    grid-template-areas: "first"
+                         "second"
+                        "third"
+                        "fourth"
+                        "fifth";
+    grid-column-gap:2%;
+    grid-row-gap:4%; 
+    }
+    .one{
+        grid-area:first;
+    }
+    .two{
+        grid-area:second;
+    }
+    .three{
+        grid-area:third;
+    }
+    .four{
+        grid-area:fourth;
+    }
+    .five{
+        grid-area:fifth;
+    }
+}
